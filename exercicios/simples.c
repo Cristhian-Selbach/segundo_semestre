@@ -29,6 +29,10 @@ int main(){
   int tam = defValor();
   int *vet = (int *)calloc(tam, sizeof(int));
   
+  if(vet == NULL){
+    return 1;
+  }
+  
   preencherVet(vet, tam);
 
   for(int i = 0; i < tam; i++){
